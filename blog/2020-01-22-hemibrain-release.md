@@ -11,5 +11,5 @@ tags: [hemibrain, downloads, release]
 Welcome to the opening of the dvid.io website and the release of the Hemibrain dataset!
 
 Stay tuned for information on the released data and how you can access it through
-a variety of ways included your own DVID server.
+a variety of ways including running your own DVID server.
 
