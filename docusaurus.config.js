@@ -15,7 +15,7 @@ module.exports = {
       title: 'DVID',
       logo: {
         alt: 'DVID Logo',
-        src: 'img/logo.svg',
+        src: 'img/favicon-512x512.png',
       },
       links: [
         {to: 'docs/about', label: 'Docs', position: 'left'},
