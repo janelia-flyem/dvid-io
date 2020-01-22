@@ -40,14 +40,20 @@ applications like [neuPrint](https://www.biorxiv.org/content/10.1101/2020.01.16.
 [NeuTu](https://janelia-flyem.gitbook.io/neutu), and [Neuroglancer](https://github.com/google/neuroglancer),
 which is actually embedded in other apps as well.  All these connectomics-focused apps
 use DVID as a backend although Neuroglancer can use a number of backends and can be optimized for particular versions of data (like the Hemibrain dataset snapshot at its release) via 
-its "precomputed" storage format.  So let's briefly cover these other
-ways to interact with the newly released data.
+its "precomputed" storage format.  
+
+Let's briefly cover the various ways you can download or interact 
+with the newly released data.
 
 ### neuPrint
 
 The first obvious stop is the [neuPrint Hemibrain website](https://neuprint.janelia.org).
 It's a nice web interface to query and visualize the released connectomics data without
 having to download anything locally.
+
+From the 26+ TB of data, we can generate [a compact (25 MB) data model](https://storage.googleapis.com/hemibrain/v1.0/conn_summary.tgz) containing the adjacency matrix.  We annotate brain region information for each connection to make the model richer.
+
+You can [download all the data injected into neuPrint](https://storage.cloud.google.com/hemibrain-release/neuprint/hemibrain_v1.0_neo4j_inputs.zip) (excluding the 3D data and skeletons) in CSV format.
 
 ### Neuroglancer
 
