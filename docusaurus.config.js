@@ -3,10 +3,14 @@ module.exports = {
   tagline: 'Distributed Versioned Image-Oriented Dataservice',
   url: 'https://dvid-io',
   baseUrl: '/',
-  favicon: '',
+  favicon: 'img/favicon.ico',
   organizationName: 'janelia-flyem', // Usually your GitHub org/user name.
   projectName: 'dvid', // Usually your repo name.
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
+    googleAnalytics: {
+        trackingID: 'UA-156681767-1',
+    },
     navbar: {
       title: 'DVID',
       logo: {
@@ -86,10 +90,4 @@ module.exports = {
       },
     ],
   ],
-    plugins: ['@docusaurus/plugin-google-analytics'],
-    themeConfig: {
-      googleAnalytics: {
-        trackingID: 'UA-156681767-1',
-      },
-    },
 };
