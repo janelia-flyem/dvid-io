@@ -39,7 +39,8 @@ fades into the background and most of what users see are connectomics-focused
 applications like [neuPrint](https://www.biorxiv.org/content/10.1101/2020.01.16.909465v1),
 [NeuTu](https://janelia-flyem.gitbook.io/neutu), and [Neuroglancer](https://github.com/google/neuroglancer),
 which is actually embedded in other apps as well.  All these connectomics-focused apps
-use DVID as a backend although Neuroglancer can be optimized for particular versions of data (like the Hemibrain dataset snapshot at its release).  So let's briefly cover these other
+use DVID as a backend although Neuroglancer can use a number of backends and can be optimized for particular versions of data (like the Hemibrain dataset snapshot at its release) via 
+its "precomputed" storage format.  So let's briefly cover these other
 ways to interact with the newly released data.
 
 ### neuPrint
@@ -50,7 +51,7 @@ having to download anything locally.
 
 ### Neuroglancer
 
-Our great collaborators at Google have not only produced exception automatic neuron
+Our great collaborators at Google have not only produced exceptional automatic neuron
 segmentation to guide our proofreading, but the Neuroglancer web app has become
 a fixture in the connectomics community.  Jeremy Maitin-Shepard has enhanced his
 Neuroglancer tool for this Hemibrain data release.  Here's a [link to viewing
