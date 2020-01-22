@@ -31,8 +31,12 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Read',
           items: [
+            {
+              label: 'Blog',
+              to: 'blog',
+            },
             {
               label: 'About',
               to: 'docs/about',
@@ -50,19 +54,11 @@ module.exports = {
               label: 'Hemibrain',
               href: 'docs/hemibrain',
             },
-            {
-              label: 'Optic lobe, mushroom body, etc',
-              href: 'http://flyem.dvid.io',
-            }
           ],
         },
         {
           title: 'Social',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/janelia-flyem/dvid',
@@ -73,6 +69,16 @@ module.exports = {
             },
           ],
         },
+        {
+          title: 'Links',
+          items: [
+            {
+              label: 'FlyEM',
+              href: 'https://www.janelia.org/project-team/flyem',
+            },
+          ],
+        },
+
       ],
       copyright: `Copyright © ${new Date().getFullYear()} DVID. Built with Docusaurus.`,
     },

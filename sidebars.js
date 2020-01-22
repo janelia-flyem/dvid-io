@@ -10,6 +10,5 @@ module.exports = {
     Introduction: ['about', 'papers'],
     "Hemibrain Example": ['hemibrain', 'hemi-instances'],
     "User Guide": ['configuring', 'running', 'tuning'],
-    "More Info": ['wiki']
   },
 };
