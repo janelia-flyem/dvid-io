@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/high-level-api.png',
     description: (
       <>
-        DVID provides a high-level Science API, focused on connectomics operations,
+        DVID provides a high-level Science HTTP API, focused on connectomics operations,
         and can shield clients from infrastructure changes and allow easier support
         for multiple tools.
       </>

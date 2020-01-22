@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Distributed Versioned Image-Oriented Dataservice',
   url: 'https://dvid-io',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: '',
   organizationName: 'janelia-flyem', // Usually your GitHub org/user name.
   projectName: 'dvid', // Usually your repo name.
   themeConfig: {
@@ -86,4 +86,10 @@ module.exports = {
       },
     ],
   ],
+    plugins: ['@docusaurus/plugin-google-analytics'],
+    themeConfig: {
+      googleAnalytics: {
+        trackingID: 'UA-156681767-1',
+      },
+    },
 };
