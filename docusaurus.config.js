@@ -80,7 +80,6 @@ module.exports = {
         },
 
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} DVID. Built with Docusaurus.`,
     },
   },
   presets: [
