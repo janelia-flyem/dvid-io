@@ -51,6 +51,8 @@ The first obvious stop is the [neuPrint Hemibrain website](https://neuprint.jane
 It's a nice web interface to query and visualize the released connectomics data without
 having to download anything locally.
 
+### Downloads
+
 From the 26+ TB of data, we can generate [a compact (25 MB) data model](https://storage.googleapis.com/hemibrain/v1.0/conn_summary.tgz) containing the adjacency matrix.  We annotate brain region information for each connection to make the model richer.
 
 You can [download all the data injected into neuPrint](https://storage.cloud.google.com/hemibrain-release/neuprint/hemibrain_v1.0_neo4j_inputs.zip) (excluding the 3D data and skeletons) in CSV format.
