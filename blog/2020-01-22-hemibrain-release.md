@@ -76,7 +76,7 @@ for interactive visualization with
 [Neuroglancer](https://github.com/google/neuroglancer) and
 programmatic access using libraries like
 [Cloudvolume](https://github.com/seung-lab/cloud-volume) (see below). 
-You can also download the data directly using the Google [gsutil](https://cloud.google.com/storage/docs/gsutil) tool (use the `-m` option, e.g., `gsutil -m cp -r gs:\\bucket mydir`
+You can also download the data directly using the Google [gsutil](https://cloud.google.com/storage/docs/gsutil) tool (use the `-m` option, e.g., `gsutil -m cp -r gs://bucket mydir`
 for bulk transfers).
 
 Available data:
