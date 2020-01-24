@@ -57,16 +57,13 @@ From the 26+ TB of data, we can generate [a compact (25 MB) data model](https://
 
 You can [download all the data injected into neuPrint](https://storage.cloud.google.com/hemibrain-release/neuprint/hemibrain_v1.0_neo4j_inputs.zip) (excluding the 3D data and skeletons) in CSV format.
 
-The skeletons of the traced neurons are [available as a tar file](https://storage.cloud.google.com/hemibrain-release/skeletons.tar.bz2).  Included is a CSV
-file `traced-neurons.csv` listing the *instance* and *type* of each traced body ID.
-
 ### Neuroglancer
 
 Our great collaborators at Google have not only produced exceptional automatic neuron
 segmentation to guide our proofreading, but the Neuroglancer web app has become
 a fixture in the connectomics community.  Jeremy Maitin-Shepard has enhanced his
 Neuroglancer tool for this Hemibrain data release.  Here's a [link to viewing
-the dataset directly in your browser](http://hemibrain-dot-neuroglancer-demo.appspot.com/#!%7B%22dimensions%22:%7B%22x%22:%5B8e-9%2C%22m%22%5D%2C%22y%22:%5B8e-9%2C%22m%22%5D%2C%22z%22:%5B8e-9%2C%22m%22%5D%7D%2C%22position%22:%5B17114%2C20543%2C18610%5D%2C%22crossSectionScale%22:54.23751620061224%2C%22crossSectionDepth%22:-37.62185354999912%2C%22projectionScale%22:64770.91726975332%2C%22layers%22:%5B%7B%22type%22:%22image%22%2C%22source%22:%22precomputed://gs://neuroglancer-janelia-flyem-hemibrain/emdata/clahe_yz/jpeg%22%2C%22name%22:%22emdata%22%7D%2C%7B%22type%22:%22segmentation%22%2C%22source%22:%22precomputed://gs://neuroglancer-janelia-flyem-hemibrain/v1.0/segmentation%22%2C%22tab%22:%22segments%22%2C%22name%22:%22segmentation%22%7D%2C%7B%22type%22:%22segmentation%22%2C%22source%22:%7B%22url%22:%22precomputed://gs://neuroglancer-janelia-flyem-hemibrain/v1.0/rois%22%2C%22subsources%22:%7B%22default%22:true%2C%22properties%22:true%2C%22mesh%22:true%7D%2C%22enableDefaultSubsources%22:false%7D%2C%22tab%22:%22segments%22%2C%22pick%22:false%2C%22selectedAlpha%22:0%2C%22saturation%22:0%2C%22objectAlpha%22:0.8%2C%22ignoreNullVisibleSet%22:false%2C%22colorSeed%22:2685294016%2C%22meshSilhouetteRendering%22:3%2C%22name%22:%22roi%22%7D%2C%7B%22type%22:%22annotation%22%2C%22source%22:%22precomputed://gs://neuroglancer-janelia-flyem-hemibrain/v1.0/synapses%22%2C%22tab%22:%22rendering%22%2C%22shader%22:%22#uicontrol%20vec3%20preColor%20color%28default=%5C%22red%5C%22%29%5Cn#uicontrol%20vec3%20postColor%20color%28default=%5C%22blue%5C%22%29%5Cn#uicontrol%20float%20preConfidence%20slider%28min=0%2C%20max=1%2C%20default=0%29%5Cn#uicontrol%20float%20postConfidence%20slider%28min=0%2C%20max=1%2C%20default=0%29%5Cn%5Cnvoid%20main%28%29%20%7B%5Cn%20%20setColor%28defaultColor%28%29%29%3B%5Cn%20%20setEndpointMarkerColor%28%5Cn%20%20%20%20vec4%28preColor%2C%200.5%29%2C%5Cn%20%20%20%20vec4%28postColor%2C%200.5%29%29%3B%5Cn%20%20setEndpointMarkerSize%282.0%2C%202.0%29%3B%5Cn%20%20setLineWidth%282.0%29%3B%5Cn%20%20if%20%28prop_pre_synaptic_confidence%28%29%3C%20preConfidence%20%7C%7C%5Cn%20%20%20%20%20%20prop_post_synaptic_confidence%28%29%3C%20postConfidence%29%20discard%3B%5Cn%7D%5Cn%22%2C%22ignoreNullSegmentFilter%22:false%2C%22linkedSegmentationLayer%22:%7B%22pre_synaptic_cell%22:%22segmentation%22%2C%22post_synaptic_cell%22:%22segmentation%22%7D%2C%22filterBySegmentation%22:%5B%22post_synaptic_cell%22%2C%22pre_synaptic_cell%22%5D%2C%22name%22:%22synapse%22%7D%2C%7B%22type%22:%22segmentation%22%2C%22source%22:%22precomputed://gs://neuroglancer-janelia-flyem-hemibrain/mito_20190717.27250582%22%2C%22tab%22:%22segments%22%2C%22pick%22:false%2C%22selectedAlpha%22:0.82%2C%22name%22:%22mito%22%2C%22visible%22:false%7D%2C%7B%22type%22:%22segmentation%22%2C%22source%22:%22precomputed://gs://neuroglancer-janelia-flyem-hemibrain/mask_normalized_round6%22%2C%22tab%22:%22segments%22%2C%22pick%22:false%2C%22selectedAlpha%22:0.53%2C%22segments%22:%5B%222%22%5D%2C%22name%22:%22mask%22%2C%22visible%22:false%7D%5D%2C%22showSlices%22:false%2C%22selectedLayer%22:%7B%22layer%22:%22segmentation%22%2C%22visible%22:true%2C%22size%22:290%7D%2C%22layout%22:%22xy-3d%22%2C%22selection%22:null%7D).
+the dataset directly in your browser](https://hemibrain-dot-neuroglancer-demo.appspot.com/#!gs://neuroglancer-janelia-flyem-hemibrain/v1.0/neuroglancer_demo_states/base.json).
 
 The hemibrain EM data and proofread reconstruction is available at the
 Google Cloud Storage bucket `gs://neuroglancer-janelia-flyem-hemibrain`
@@ -125,10 +122,12 @@ setup DVID with the Hemibrain dataset as described below.
 
 For those users who want to download their own copy of our data and forge ahead on their 
 own branch of reconstruction, they can download a replica of our production DVID system 
-and the full Hemibrain databases.  Because the amount of data approaches 2 TB, 
-we've put the data into separate databases that can be selectively downloaded 
-depending on your interests.  If you choose not to download a database, that particular 
-data won't be available but the DVID system will still work.
+and the full Hemibrain databases.  Because the amount of the fully versioned databases
+approach 2 TB, we're flattening the version graph to just a few versions with this
+week's release version as the leaf.  This brings down the size of the databases to 1.2 TB.
+You're also able to choose which of the databases you'd like to download (segmentation, 
+other labelmaps, synapses, meshes, etc).  If you choose not to download a database, the 
+data from that database won't be available but the DVID system will still work.
 
 Download links and documentation will be available within the next day or two.  Stay tuned
 to this blog for updates.  And do [drop us a note](https://www.janelia.org/people/william-katz) 
