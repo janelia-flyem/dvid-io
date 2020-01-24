@@ -57,6 +57,9 @@ From the 26+ TB of data, we can generate [a compact (25 MB) data model](https://
 
 You can [download all the data injected into neuPrint](https://storage.cloud.google.com/hemibrain-release/neuprint/hemibrain_v1.0_neo4j_inputs.zip) (excluding the 3D data and skeletons) in CSV format.
 
+The skeletons of the 21,663 traced neurons are [available as a tar file](https://storage.cloud.google.com/hemibrain-release/skeletons.tar.gz).  Included is a CSV
+file `traced-neurons.csv` listing the *instance* and *type* of each traced body ID.
+
 ### Neuroglancer
 
 Our great collaborators at Google have not only produced exceptional automatic neuron
