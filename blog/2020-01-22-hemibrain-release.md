@@ -132,6 +132,7 @@ You're also able to choose which of the databases you'd like to download (segmen
 other labelmaps, synapses, meshes, etc).  If you choose not to download a database, the 
 data from that database won't be available but the DVID system will still work.
 
-Download links and documentation will be available within the next day or two.  Stay tuned
+Download links and documentation will be available as soon as we can verify the databases
+with reduced versions are completely accurate and stable.  Stay tuned
 to this blog for updates.  And do [drop us a note](https://www.janelia.org/people/william-katz) 
 if you plan to take this route so we can keep you apprised of continuing work on the DVID system.
