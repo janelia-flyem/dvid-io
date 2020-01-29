@@ -1,6 +1,6 @@
 module.exports = {
   title: 'DVID',
-  tagline: 'Distributed Versioned Image-Oriented Dataservice',
+  tagline: 'Distributed Versioned Image-oriented Dataservice',
   url: 'https://dvid-io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',

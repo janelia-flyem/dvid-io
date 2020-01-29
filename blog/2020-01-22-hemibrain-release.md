@@ -10,14 +10,15 @@ tags: [hemibrain, downloads, release]
 
 Welcome to the opening of the dvid.io website and the [release of the Hemibrain dataset](https://www.janelia.org/project-team/flyem/hemibrain)!
 
-For the first blog post, I'll oddly tell you all the ways you can access the dataset 
+For the first blog post, I'll oddly tell you all the ways you can access the dataset
 *without* DVID, and end the post with why you might eventually want to use it.  The
-full Hemibrain DVID dataset is just under two terabytes of data and was the central
-database for the 50+ users during the reconstruction process.  (See [Data Management in Connectomics](https://www.janelia.org/project-team/flyem/blog/data-management-in-connectomics) for
-a blog post on how we manage data.)
+full Hemibrain DVID dataset, exclusing the grayscale image volume (34431 x 39743 x 41407 voxels) kept in the cloud with another
+two terabytes of local data for the automated and human proofreading work.
+(See [Data Management in Connectomics](https://www.janelia.org/project-team/flyem/blog/data-management-in-connectomics) 
+for a blog post on how we manage data.)
 
-In addition to the grayscale image volume (34431 x 39743 x 41407 voxels), DVID managed
-many versions of data throughout the connectome construction including:
+DVID was the central database for 50+ users, managing many versions of data throughout
+the connectome construction including:
 
 * segmentation: supervoxel identifiers per voxel and their mapping to neuron body IDs
 * regions of interest (ROIs) like the Mushroom Body
@@ -132,7 +133,12 @@ You're also able to choose which of the databases you'd like to download (segmen
 other labelmaps, synapses, meshes, etc).  If you choose not to download a database, the 
 data from that database won't be available but the DVID system will still work.
 
-Download links and documentation will be available as soon as we can verify the databases
+The [grayscale data is now available through your own local DVID server](hemibrain-grayscale.tar.bz2)
+with data provided by Google.  Just follow the README instructions after unpacking the
+downloaded tarball.
+
+Download links and documentation for the segmentation and other data 
+will be available as soon as we can verify the databases
 with reduced versions are completely accurate and stable.  Stay tuned
 to this blog for updates.  And do [drop us a note](https://www.janelia.org/people/william-katz) 
 if you plan to take this route so we can keep you apprised of continuing work on the DVID system.
