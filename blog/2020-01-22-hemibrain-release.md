@@ -134,7 +134,7 @@ You're also able to choose which of the databases you'd like to download (segmen
 other labelmaps, synapses, meshes, etc).  If you choose not to download a database, the 
 data from that database won't be available but the DVID system will still work.
 
-The [grayscale data is now available through your own local DVID server](hemibrain-grayscale.tar.bz2)
+The [grayscale data is now available through your own local DVID server](https://storage.cloud.google.com/hemibrain-release/hemibrain-grayscale.tar.bz2)
 with data provided by Google.  Just follow the README instructions after unpacking the
 downloaded tarball.
 
