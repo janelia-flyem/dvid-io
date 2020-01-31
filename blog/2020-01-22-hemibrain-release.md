@@ -125,21 +125,12 @@ setup DVID with the Hemibrain dataset as described below.
 
 ### Full Datasets with DVID
 
-For those users who want to download their own copy of our data and forge ahead on their 
-own branch of reconstruction, they can download a replica of our production DVID system 
-and the full Hemibrain databases.  Because the amount of the fully versioned databases
-approach 2 TB, we're flattening the version graph to just a few versions with this
-week's release version as the leaf.  This brings down the size of the databases to 1.2 TB.
-You're also able to choose which of the databases you'd like to download (segmentation, 
-other labelmaps, synapses, meshes, etc).  If you choose not to download a database, the 
-data from that database won't be available but the DVID system will still work.
+For those users who want to download and forge ahead on their own copy of our reconstruction data,
+you can download a replica of our production DVID system and the full Hemibrain databases.  
 
-The [grayscale data is now available through your own local DVID server](https://storage.cloud.google.com/hemibrain-release/hemibrain-grayscale.tar.bz2)
-with data provided by Google.  Just follow the README instructions after unpacking the
-downloaded tarball.
+Please refer to the [Hemibrain DVID release page](/docs/hemibrain) for download information.
 
-Download links and documentation for the segmentation and other data 
-will be available as soon as we can verify the databases
-with reduced versions are completely accurate and stable.  Stay tuned
-to this blog for updates.  And do [drop us a note](https://www.janelia.org/people/william-katz) 
-if you plan to take this route so we can keep you apprised of continuing work on the DVID system.
+We'll be updating the documentation on this website over time.  
+Please [drop us a note](https://www.janelia.org/people/william-katz) 
+if you are running your own fork so we can keep you apprised of continuing work, documentation,
+and opportunities to push back your changes to the public server.
