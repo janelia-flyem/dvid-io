@@ -71,16 +71,18 @@ gs://hemibrain-dvid-segmentation/databases
 We suggest using the Google gsutil tool:
 https://cloud.google.com/storage/docs/gsutil
 
-From this directory, create a sibling databases directory and then download the
-databases you want.
+Create a `databases` directory that is a sibling of the untarred DVID package,
+ then download the databases you want.
+
 ```bash
 % mkdir ../databases 
 % gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/metadata ../databases
-% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/metadata ../segmentation
-% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/metadata ../mutlog
+% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/segmentation ../databases
+% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/mutlog ../databases
 ...
 % chown -R me:mygroup ../databases  # makes sure you can actually write to those DBs
 ```
+
 You are required to download the small "metadata" database but can choose some 
 combination of the other databases.  The full dataset is comprised of the following
 databases:
@@ -118,9 +120,11 @@ software protections that can lead to your being unable to run the program](http
 
 In order to workaround the problem, please execute the following
 from the `hemibrain-dvid` directory:
+
 ```bash
 % xattr -r -d com.apple.quarantine mac/lib mac/bin
 ```
+
 If you are successful, the server will log messages to /tmp/hemibrain-grayscale.log
 or whatever directory is specified for logging in the hemibrain-grayscale.toml
 file in this directory.  You can modify that TOML file to configure
