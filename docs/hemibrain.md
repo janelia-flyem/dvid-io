@@ -139,7 +139,7 @@ inspect the dvid server using [http://localhost:8000](http://localhost:8000).
 
 Other useful commands to try:
 
-    $ tail -f /tmp/hemibrain-release.log   # See DVID serve results while using http://localhost:8000
+    % tail -f /tmp/hemibrain-release.log
 
     % <os>/bin/dvid about
     
