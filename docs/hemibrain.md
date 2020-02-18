@@ -31,6 +31,11 @@ First, download the [DVID packaged tarball file](https://storage.cloud.google.co
 % tar xjvf hemibrain-dvid.tar.bz2
 ```
 
+If you download through the browser, it's possible it will automatically uncompress the file and
+you'll already have a `tar` file without the `bz2` extension.  When untarring the file, you may
+get `Ignoring unknown extended header keyword` errors if you are on Ubuntu.  That's OK and is just extra
+Mac tar file data that can be ignored.
+
 Within the untarred directory `hemibrain-dvid` is a configuration file 
 `hemibrain-release.toml`.  This configuration assumes you are
 downloading the databases to a sibling directory `databases` like
@@ -72,15 +77,16 @@ We suggest using the Google gsutil tool:
 https://cloud.google.com/storage/docs/gsutil
 
 Create a `databases` directory that is a sibling of the untarred DVID package,
- then download the databases you want.
+then download the databases you want.  The following commands assume you are in
+the directory you downloaded the DVID packaged tarball file.
 
 ```bash
-% mkdir ../databases 
-% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/metadata ../databases
-% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/segmentation ../databases
-% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/mutlog ../databases
+% mkdir databases   # should be sibling of the untarred hemibrain-dvid directory
+% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/metadata databases
+% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/segmentation databases
+% gsutil -m cp -r gs://hemibrain-dvid-segmentation/databases/mutlog databases
 ...
-% chown -R me:mygroup ../databases  # makes sure you can actually write to those DBs
+% chown -R me:mygroup databases  # makes sure you can actually write to those DBs
 ```
 
 You are required to download the small "metadata" database but can choose some 
@@ -90,7 +96,7 @@ databases:
 |Size|Database|Description|
 |------|--------------|---|
 |718 GB|   segmentation|Highly compressed supervoxel `uint64` ids per voxel|
-|3.5 GB|   mutlog|Required if using segmentation and supplies the supervoxel-to-label mappings|
+|3.5 GB|   mutlog|Required if using segmentation. Supplies the supervoxel-to-label mappings|
 |225 GB|   other-labelmaps|Mitochondria, ROIs, etc.|
 |145 GB|   meshes | Neuroglancer format |
 | 47 GB|   synapses| Pre- and post-synaptic annotations|
@@ -125,13 +131,15 @@ from the `hemibrain-dvid` directory:
 % xattr -r -d com.apple.quarantine mac/lib mac/bin
 ```
 
-If you are successful, the server will log messages to /tmp/hemibrain-grayscale.log
-or whatever directory is specified for logging in the hemibrain-grayscale.toml
+If you are successful, the server will log messages to /tmp/hemibrain-release.log
+or whatever directory is specified for logging in the hemibrain-release.toml
 file in this directory.  You can modify that TOML file to configure
 your server including the ports it runs on.  You can use the browser to 
 inspect the dvid server using [http://localhost:8000](http://localhost:8000).
 
 Other useful commands to try:
+
+    $ tail -f /tmp/hemibrain-release.log   # See DVID serve results while using http://localhost:8000
 
     % <os>/bin/dvid about
     
