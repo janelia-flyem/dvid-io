@@ -12,10 +12,9 @@ are trying to query.
 
 |Data Instance|Data Type|Description|
 |-------------|---------|-----------|
-|bookmark_annotations     |  annotation  |  |
-|segmentation_todo        |  annotation  |  |
+|bookmark_annotations     |  annotation  | General user-tagged point annotations  |
+|segmentation_todo        |  annotation  | To-do annotations for organizing proofreading workflow |
 |synapses                 |  annotation  | The synapse data organized spatially, by tag, and by label. |
-|bookmarks                |  keyvalue  |  |
 |roi_data                 |  keyvalue  |  |
 |rois                     |  keyvalue  |  |
 |roisSmoothedDecimated    |  keyvalue  | Key = ROI name.Value = Smoothed, decimated ROI surface mesh. |
