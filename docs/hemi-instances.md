@@ -12,6 +12,7 @@ are trying to query.
 
 |Data Instance|Data Type|Description|
 |-------------|---------|-----------|
+|bookmark_annotations     |  annotation  |  |
 |segmentation_todo        |  annotation  |  |
 |synapses                 |  annotation  | The synapse data organized spatially, by tag, and by label. |
 |bookmarks                |  keyvalue  |  |
@@ -21,7 +22,6 @@ are trying to query.
 |segmentation_annotations |  keyvalue  | See Note 1. |
 |segmentation_meshes      |  keyvalue  | Key = label ID + ".ngmesh". Value = Neuroglancer mesh. |
 |segmentation_skeletons   |  keyvalue  | Key = label ID + "_swc".  Value = SWC file. |
-|segmentation_splits      |  keyvalue  |  |
 |mito_20190501.24734943   |  labelmap  |  |
 |segmentation             |  labelmap  | The supervoxel and agglomerated label of every voxel. |
 |segmentation_roi_voxels  |  labelmap  | See Note 2. |
