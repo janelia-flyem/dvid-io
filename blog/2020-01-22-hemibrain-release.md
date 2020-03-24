@@ -128,6 +128,10 @@ setup DVID with the Hemibrain dataset as described below.
 For those users who want to download and forge ahead on their own copy of our reconstruction data,
 you can download a replica of our production DVID system and the full Hemibrain databases.  
 
+_<Clarification added 2020-03-24>_ You can quickly download a relatively small DVID executable which then
+allows access to grayscale data stored in the cloud, both in JPEG and raw format.  All other data can
+be downloaded by type (e.g., synapses, ROIs, segmentation, etc.) so you can choose what you need.
+
 Please refer to the [Hemibrain DVID release page](/docs/hemibrain) for download information.
 
 We'll be updating the documentation on this website over time.  
