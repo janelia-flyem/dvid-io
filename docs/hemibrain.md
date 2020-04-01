@@ -10,8 +10,7 @@ databases, complete save for some irrelevant data for outside use.
 ## The grayscale image volume
 
 The [grayscale data is available through your own local DVID server](https://storage.cloud.google.com/hemibrain-release/hemibrain-grayscale.tar.bz2)
-(165 MB) with data storage provided by Google-owned cloud storage (`gs://hemibrain-dvid`).  Both raw and 3D JPEG grayscale data are available
-in that Google Cloud Storage bucket.
+(165 MB) with data storage provided by Google-owned cloud storage (`gs://hemibrain-raw-grayscale`).  Both raw and 3D JPEG grayscale data are available in that Google Cloud Storage bucket.
 Just follow the README instructions after unpacking the downloaded tarball.
 
 ## All other reconstruction data
