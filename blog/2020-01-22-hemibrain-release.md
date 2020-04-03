@@ -111,6 +111,13 @@ Available data:
     `gs://neuroglancer-janelia-flyem-hemibrain/v1.0/synapses`
     Neuroglancer annotation format
 
+### Tensorstore (Added 2020-04-03)
+
+Google just released a new library for efficiently reading and writing large multi-dimensional
+arrays.  At this time, there are C++ and python APIs.  An example of [reading the hemibrain
+segmentation](https://google.github.io/tensorstore/python/tutorial.html#reading-the-janelia-flyem-hemibrain-dataset) is
+in the Tensorstore documentation.
+
 ### CloudVolume
 
 The Seung Lab's [CloudVolume](https://github.com/seung-lab/cloud-volume) python client
