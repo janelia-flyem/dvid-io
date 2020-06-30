@@ -14,8 +14,15 @@ This post provides updated links and descriptions.
 
 ### neuPrint
 
-The [neuPrint Hemibrain website](https://neuprint.janelia.org) should be most visitors' first stop, and it has been
+The [neuPrint Explorer](https://neuprint.janelia.org) should be most visitors' first stop, and it has been
 updated with the V1.1 data and sports enhancements since last January.
+
+For programmatic access to the neuPrint database, see the [neuprint-python][1] library.  For power-users who need access to the DVID database (see last section), you can try the [`neuclease.dvid`][2] python bindings.  
+[1]: https://github.com/connectome-neuprint/neuprint-python
+[2]: https://github.com/janelia-flyem/neuclease
+
+This table differentiates each library based on the types of requests they support:
+![Dataset Libraries Features](/img/DatasetLibraries.png)
 
 ### Downloads
 
