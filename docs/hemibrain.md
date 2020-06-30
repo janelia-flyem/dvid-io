@@ -6,6 +6,8 @@ title: The Dataset
 The Hemibrain dataset, released in January 2020, was managed by DVID for most of its
 production. We are providing a replica of our production DVID system and the
 databases, complete save for some irrelevant data for outside use.  
+We are currently working on producing a complete download for Version 1.1
+of the Hemibrain dataset, although the grayscale data below are unchanged.
 
 ## The grayscale image volume
 
