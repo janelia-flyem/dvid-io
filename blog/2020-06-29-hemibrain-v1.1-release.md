@@ -9,7 +9,7 @@ tags: [hemibrain, downloads, release]
 ---
 
 Version 1.1 of the Hemibrain dataset has been released.  We suggest you familiarize yourself with
-the dataset and tools to access it through the initial discussion in our ![previous V1.0 release post](/blog/release).
+the dataset and tools to access it through the initial discussion in our [previous V1.0 release post](/blog/release).
 This post provides updated links and descriptions.
 
 ### neuPrint
