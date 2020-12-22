@@ -16,8 +16,8 @@ This post provides updated links and descriptions.
 ### neuPrint+ tools from FlyEM Team
 
 The [neuPrint+ Explorer](https://neuprint.janelia.org) should be most visitors' first stop, and it has been
-updated with the V1.2 data and sports enhancements since last January.  We now designate the neuprint
-ecosystem as neuprint+ because we add *intra-cellular* interactions in addition to the *inter-cellular* data.
+updated with the V1.2 data and sports enhancements since June.  We now designate the neuPrint
+ecosystem as neuPrint+ because we add *intra-cellular* interactions in addition to the *inter-cellular* data.
 
 For programmatic access to the neuPrint+ database, see the [neuprint-python][1] library .  For power-users who need access to the DVID database (see last section), you can try the [`neuclease.dvid`][4] python bindings.  
 [1]: https://github.com/connectome-neuprint/neuprint-python
@@ -38,7 +38,7 @@ the [hemibrainr R code][3] tailored to this Hemibrain dataset, and the [NAVis py
 
 ### Downloads
 
-From the 26+ TB of data, we can generate [a compact (45.5 MB) data model](https://storage.cloud.google.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz) containing the following:
+From the 26+ TB of data, we can generate [a compact (? MB) data model](https://storage.cloud.google.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz) containing the following:
 
 * Table of the neuron IDs, types, and instance names.
 * Neuron-neuron connection table with synapse count between each pair.
@@ -95,7 +95,10 @@ To parse the data, use one of the software libraries below or you'll have to wri
     Neuroglancer compressed segmentation format
 - Mitochondria detections
   - Volumetric labels (at original 16x16x16nm resolution, as well as downsamplings)
-    `gs://neuroglancer-janelia-flyem-hemibrain/mito_20190717.27250582`
+    `gs://neuroglancer-janelia-flyem-hemibrain/v1.2/mito-classes`
+    Neuroglancer compressed segmentation format
+  - Grouped labels (at original 16x16x16nm resolution, as well as downsamplings)
+    `gs://neuroglancer-janelia-flyem-hemibrain/v1.2/mito-objects-grouped`
     Neuroglancer compressed segmentation format
 
 #### Tensorstore
