@@ -3,11 +3,17 @@ id: hemibrain
 title: The Dataset
 ---
 
-The Hemibrain dataset, released in January 2020, was managed by DVID for most of its
-production. We are providing a replica of our production DVID system and the
-databases, complete save for some irrelevant data for outside use.  
-We are currently working on producing a complete download for Version 1.1
-of the Hemibrain dataset, although the grayscale data below are unchanged.
+The Hemibrain dataset, initially released in January 2020, was managed by DVID for most of its
+production. We can provide a replica of our production DVID system and the
+databases, complete save for some irrelevant data for outside use.  Due to 
+the large download sizes and our changing the underlying system, we suggest using
+[neuPrint and the variety of software libraries explained in our Hemibrain release
+blog entry](http://dvid.io/blog/release-v1.2) unless you need additional data or 
+versions not present in the analysis-oriented formats.
+
+The following descriptions are from the original Hemibrain v1.0 release.  
+Please [drop us a note](https://www.janelia.org/people/william-katz) if you would like access to the
+updated V1.2 DVID dataset.
 
 ## The grayscale image volume
 
