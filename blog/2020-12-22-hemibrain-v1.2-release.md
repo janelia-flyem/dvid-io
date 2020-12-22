@@ -38,16 +38,13 @@ the [hemibrainr R code][3] tailored to this Hemibrain dataset, and the [NAVis py
 
 ### Downloads
 
-From the 26+ TB of data, we can generate [a compact (? MB) data model](https://storage.cloud.google.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz) containing the following:
+From the 26+ TB of data, we can generate [a compact (44 MB) data model](https://storage.cloud.google.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz) containing the following:
 
 * Table of the neuron IDs, types, and instance names.
 * Neuron-neuron connection table with synapse count between each pair.
 * Same as above but each connection pair is split by ROI in which the synapses reside.
 
 You can [download all the data injected into neuPrint+](https://storage.cloud.google.com/hemibrain-release/neuprint/hemibrain_v1.2_neo4j_inputs.zip) (excluding the 3D data and skeletons) in CSV format.
-
-*Pending* ... The skeletons of the 21,663 traced neurons are [available as a tar file]().  Included is a CSV
-file `traced-neurons.csv` listing the *instance* and *type* of each traced body ID.
 
 ### Neuroglancer Precomputed Data
 
@@ -94,12 +91,9 @@ To parse the data, use one of the software libraries below or you'll have to wri
     `gs://neuroglancer-janelia-flyem-hemibrain/mask_normalized_round6`
     Neuroglancer compressed segmentation format
 - Mitochondria detections
-  - Volumetric labels (at original 16x16x16nm resolution, as well as downsamplings)
-    `gs://neuroglancer-janelia-flyem-hemibrain/v1.2/mito-classes`
-    Neuroglancer compressed segmentation format
-  - Grouped labels (at original 16x16x16nm resolution, as well as downsamplings)
-    `gs://neuroglancer-janelia-flyem-hemibrain/v1.2/mito-objects-grouped`
-    Neuroglancer compressed segmentation format
+  - Voxelwise mitochondrion class labels (at original 16x16x16nm resolution, as well as downsamplings)  `gs://neuroglancer-janelia-flyem-hemibrain/v1.2/mito-classes` Neuroglancer compressed segmentation format
+  - Instance segmentation labels (at original 16x16x16nm resolution, as well as downsamplings and upsampling to 8nm) `gs://neuroglancer-janelia-flyem-hemibrain/v1.2/mito-objects` Neuroglancer compressed segmentation format
+  - Relabeled instance segmentation, grouped by encompassing neuron ID (at original 16x16x16nm resolution, as well as downsamplings and upsampling to 8nm) `gs://neuroglancer-janelia-flyem-hemibrain/v1.2/mito-objects-grouped Neuroglancer` compressed segmentation format
 
 #### Tensorstore
 
