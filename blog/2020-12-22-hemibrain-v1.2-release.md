@@ -19,7 +19,7 @@ The [neuPrint+ Explorer](https://neuprint.janelia.org) should be most visitors' 
 updated with the V1.2 data and sports enhancements since June.  We now designate the neuPrint
 ecosystem as neuPrint+ because we add *intra-cellular* interactions in addition to the *inter-cellular* data.
 
-For programmatic access to the neuPrint+ database, see the [neuprint-python][1] library .  For power-users who need access to the DVID database (see last section), you can try the [`neuclease.dvid`][4] python bindings.  
+For programmatic access to the neuPrint+ database, see the [neuprint-python][1] library .  For power-users who need access to the DVID database (see last section), you can try the [`neuclease.dvid`][2] python bindings.  
 [1]: https://github.com/connectome-neuprint/neuprint-python
 [2]: https://github.com/janelia-flyem/neuclease
 
@@ -29,12 +29,12 @@ This table differentiates each library based on the types of requests they suppo
 ### neuPrint tools from Collaborators
 
 Our collaborators have developed a nice ecosystem for neurodata analysis and visualization using the neuPrint connectome service.
-Some of their work can be seen in their [tweet thread][1].  Code for getting and using the data include the [neuprintr R library][2],
-the [hemibrainr R code][3] tailored to this Hemibrain dataset, and the [NAVis python library][4].
-[1]: https://twitter.com/gsxej/status/1339867930046181376?s=20
-[2]: https://github.com/natverse/neuprintr
-[3]: https://github.com/natverse/hemibrainr
-[4]: https://github.com/schlegelp/navis
+Some of their work can be seen in their [tweet thread][3].  Code for getting and using the data include the [neuprintr R library][4],
+the [hemibrainr R code][5] tailored to this Hemibrain dataset, and the [NAVis python library][6].
+[3]: https://twitter.com/gsxej/status/1339867930046181376?s=20
+[4]: https://github.com/natverse/neuprintr
+[5]: https://github.com/natverse/hemibrainr
+[6]: https://github.com/schlegelp/navis
 
 ### Downloads
 
