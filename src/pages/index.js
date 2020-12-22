@@ -74,7 +74,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('blog/release-v1.1')}>
+              to={useBaseUrl('blog/release-v1.2')}>
               Get Started with the Hemibrain
             </Link>
           </div>
